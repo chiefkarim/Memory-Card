@@ -1,0 +1,67 @@
+body{
+
+  min-height: 100%;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+
+font-family: Open Sans;
+color: aliceblue;
+}
+
+header{
+  background-color: #00152b;
+  height: 10vh;
+  width: 100vw;
+ color: #4ac4e2;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+h1{
+  margin: 0;
+  font-size: 1.2rem;
+  margin-left: 1%;
+ 
+}
+.score{
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin-right: 2%;
+}
+.score>h1>span:first{
+  margin-right:10px
+}
+img{
+   width: 18vw;
+   height: 18vw;
+   border: radius 100px;
+   -webkit-border-radius:100px ;
+   -moz-border-radius:100px ;
+   -ms-border-radius:100px ;
+   -o-border-radius:100px ;
+   transition: all .1s ease-in-out;
+   -webkit-transition: all .1s ease-in-out;
+   -moz-transition: all .1s ease-in-out;
+   -ms-transition: all .1s ease-in-out;
+   -o-transition: all .1s ease-in-out;
+}
+img:hover{
+  scale: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#root>div{
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(auto-fill,17vw)  ;
+  gap: 2%;
+}
